@@ -1,6 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <jsp:useBean id="applicant" class="edu.jsu.mcis.cs425.project2.BeanApplicant" scope="session" />
 <jsp:setProperty name="applicant" property="username" value="<%= request.getRemoteUser() %>" />
+<% applicant.setUserInfo(); %>
 
 <!DOCTYPE html>
 <html>
